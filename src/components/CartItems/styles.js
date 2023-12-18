@@ -7,6 +7,11 @@ export const Container = styled.div`
   border-radius: 20px;
   padding: 20px;
   margin-bottom:150px;
+
+  ${props=>props.center && `
+    position: relative;
+    left: 197px;
+  `}
 `
 
 export const Header = styled.div`
@@ -93,4 +98,5 @@ export const Lixeira=styled.button`
     width:70px;
     height:70px;
   }
+
 `

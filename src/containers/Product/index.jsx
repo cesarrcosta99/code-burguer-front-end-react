@@ -10,12 +10,27 @@ import { apiCodeBurguer } from '../../services/api'
 import formatValue from '../../utils/formatValue'
 import {CardProduct} from '../../components'
 import { useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom'
 
 export function Product() {
+
+  const {state} = useLocation()
+
+  let idCategory=0
+  if(state?.categoryId){
+    idCategory=state.categoryId
+  }
+  
+  
+
+
   const [categories, setCategories] = useState([])
   const [product, setProduct] = useState([])
   const [filterProduct, setFilterProduct] = useState([])
-  const [activeCategory, setActiveCategory] = useState(0)
+  const [activeCategory, setActiveCategory] = useState(idCategory)
+
+  
+  
 
   useEffect(() => {
     async function loadCategory() {
@@ -48,6 +63,7 @@ export function Product() {
       setFilterProduct(newProduct)
     }
   }, [activeCategory, product])
+
 
   return (
     <Container>

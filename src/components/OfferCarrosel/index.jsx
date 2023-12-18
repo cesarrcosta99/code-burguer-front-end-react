@@ -12,21 +12,24 @@ import {
   NameLanche
 } from './styles'
 import LetraOffer from '../../assets/Letra-OFERTAS.png'
+import { useNavigate } from 'react-router-dom'
+import { UseCart } from '../../hooks/CartContext'
 
 export function OfferCarrosel() {
   const [offer, setOffer] = useState([])
+  const { putCart } = UseCart()
+
+  const navigate = useNavigate()
 
   useEffect(() => {
     async function RenderOffer() {
       const { data } = await apiCodeBurguer.get('products')
 
-      const productOffer = data.filter(item => item.offer).map(product=>{
-        return (
-          {...product,
-            formatCurrency:formatValue(product.price)
-          }
-        )
-      })
+      const productOffer = data
+        .filter(item => item.offer)
+        .map(product => {
+          return { ...product, formatCurrency: formatValue(product.price) }
+        })
 
       setOffer(productOffer)
     }
@@ -56,7 +59,10 @@ export function OfferCarrosel() {
             <Item src={produtos.url} alt="imagem" />
             <NameLanche>{produtos.name}</NameLanche>
             <Price>{produtos.formatCurrency}</Price>
-            <Button>Peça agora</Button>
+            <Button onClick={() => {
+              navigate('/carrinho')
+              putCart(produtos)
+              }}>Peça agora</Button>
           </SecondContainer>
         ))}
       </Carousel>

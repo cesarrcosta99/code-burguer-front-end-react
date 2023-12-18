@@ -1,5 +1,6 @@
 import { Navigate } from "react-router-dom";
 import PropTypes from "prop-types"
+import { Header } from "../components";
 
   function PrivateRoute({children}) {
     const user=localStorage.getItem('codeBurguer:user')
@@ -8,7 +9,12 @@ import PropTypes from "prop-types"
         return <Navigate to='/login' replace={true}/>
     }
 
-    return children
+    return (
+        <>
+            <Header/>
+             {children}
+             </>
+             )
 }
 
 export default PrivateRoute

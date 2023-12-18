@@ -52,16 +52,15 @@ export const CartProvider = ({ children }) => {
 
     if(filterItem !==-1) {
       cartProducts.splice(filterItem,1)
-      console.log(cartProducts)
 
       setCartProducts([...cartProducts])
       updateLocalStorage(cartProducts)
     }
-    
-    
-
-
   }
+
+  const totalItens=cartProducts.reduce((acc,valorAtual)=>{
+      return acc + valorAtual.price * valorAtual.quantity
+  },0)
 
   useEffect(() => {
     const produto = localStorage.getItem('codeburguer:cart')
@@ -72,7 +71,7 @@ export const CartProvider = ({ children }) => {
   }, [])
 
   return (
-    <CartContext.Provider value={{ putCart, cartProducts, changeQuantity,deleteItem }}>
+    <CartContext.Provider value={{ putCart, cartProducts, changeQuantity,deleteItem,totalItens }}>
       {children}
     </CartContext.Provider>
   )

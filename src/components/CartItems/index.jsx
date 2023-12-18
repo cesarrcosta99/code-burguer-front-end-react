@@ -6,10 +6,9 @@ import LixeiraCarrinho from '../../assets/Lixeira.png'
 
 export function CartItems() {
   const { cartProducts,changeQuantity,deleteItem } = UseCart()
-  console.log(cartProducts)
 
   return (
-    <Container>
+    <Container center={cartProducts.length === 0}>
       <Header>
         <p></p>
         <p style={{ paddingLeft: 14 }}>Itens</p>
@@ -23,7 +22,7 @@ export function CartItems() {
         cartProducts.map(product => (
           <Body key={product.id}>
             <img src={product.url} />
-            <p>{product.name}</p>
+            <p style={{width:160}}>{product.name}</p>
             <p style={{ paddingLeft: 18, fontWeight: 500 }}>
               {formatValue(product.price)}
             </p>
