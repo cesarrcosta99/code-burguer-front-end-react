@@ -5,13 +5,13 @@ import {
   SecondContainer,
   Label,
   InputForms,
-  SignLink,
-  Errors
+  SignLink
 } from './styles'
 import RegisterImage from '../../assets/Imagem-Register.png'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { apiCodeBurguer } from '../../services/api'
+import { Errors } from '../../components'
 import Logo from '../../assets/Logo.png'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as Yup from 'yup'

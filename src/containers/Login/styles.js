@@ -83,10 +83,4 @@ export const InputForms = styled.input`
   margin-bottom:${props=>props.error ? "5px" : "25px"};
 `
 
-export const Errors = styled.p`
-  color: red;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
-  margin-bottom:5px;
-`
+

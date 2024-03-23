@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export const apiCodeBurguer = axios.create({
-  baseURL: 'http://localhost:3001'
+  baseURL: 'https://back-end-production-5511.up.railway.app/'
 })
 
 apiCodeBurguer.interceptors.request.use(config => {

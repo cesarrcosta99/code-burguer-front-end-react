@@ -4,13 +4,13 @@ import {
   SecondContainer,
   Label,
   InputForms,
-  Errors,
   SignLink
 } from './styles'
 import { apiCodeBurguer } from '../../services/api'
 import { useNavigate } from 'react-router-dom'
 import { UseUser } from '../../hooks/UserContext'
 import { toast } from 'react-toastify'
+import { Errors } from '../../components'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as Yup from 'yup'
@@ -54,7 +54,12 @@ export function Login() {
     putUserData(data)
 
     setTimeout(() => {
-      navigate('/')
+
+      if(data.admin) {
+        navigate('/pedidos')
+      } else {
+        navigate('/')
+      }
     }, 2000)
   }
 
