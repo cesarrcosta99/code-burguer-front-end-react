@@ -29,6 +29,7 @@ export const Container = styled.div`
       letter-spacing: 0em;
       text-align: left;
       color: #555555;
+      max-width: 105px;
     }
   }
 `
@@ -40,8 +41,6 @@ export const LinkPages = styled.a`
   font-size: 16px;
   font-weight: ${props => (props.isActive ? 700 : 400)};
   line-height: 19px;
-
-  
 `
 
 export const Divisao = styled.div`
