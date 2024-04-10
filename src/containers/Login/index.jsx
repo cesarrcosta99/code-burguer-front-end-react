@@ -74,7 +74,7 @@ export function Login() {
   return (
     <Container>
       <Image src={LoginImage} />
-
+       <h1>Aplicação Desenvolvida por César Rebouças</h1>
       <SecondContainer>
         <img src={Logo} alt="image-logo" />
         <h1>Login</h1>
