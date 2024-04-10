@@ -4,7 +4,8 @@ import {
   SecondContainer,
   Label,
   InputForms,
-  SignLink
+  SignLink,
+  Nome
 } from './styles'
 import { apiCodeBurguer } from '../../services/api'
 import { useNavigate } from 'react-router-dom'
@@ -74,9 +75,10 @@ export function Login() {
   return (
     <Container>
       <Image src={LoginImage} />
-       <h1>Aplicação Desenvolvida por César Rebouças</h1>
       <SecondContainer>
+
         <img src={Logo} alt="image-logo" />
+        <Nome></Nome>
         <h1>Login</h1>
         <form noValidate onSubmit={handleSubmit(onSubmit)}>
           <Label>Email</Label>

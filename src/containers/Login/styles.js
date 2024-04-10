@@ -83,4 +83,6 @@ export const InputForms = styled.input`
   margin-bottom:${props=>props.error ? "5px" : "25px"};
 `
 
-
+export const Nome=styled.h1`
+  color:blue;
+`
