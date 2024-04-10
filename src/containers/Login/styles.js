@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Background from '../../assets/Background.png'
+import breakpoints from './../../styles/breakpoints';
 
 export const Container = styled.div`
   background: url('${Background}');
@@ -89,4 +90,12 @@ export const Nome=styled.h3`
   font-size: 14px;
   margin-left: 145px;
   margin-top: -6px;
+
+  @media ${breakpoints.bg}{
+    margin-left: 75px;
+  }
+
+  @media ${breakpoints.md}{
+    margin-left: 37px;
+  }
 `
