@@ -12,7 +12,7 @@ export const Container = styled.div`
 `
 
  export const Image=styled.img`
-  height: 88%;
+  height: 90%;
  `
 
 
@@ -20,7 +20,7 @@ export const Container = styled.div`
 
 export const SecondContainer = styled.div`
   background: #373737;
-  height: 88%;
+  height: 90%;
   border-radius: 0 10px 10px 0;
   display: flex;
   flex-direction: column;
@@ -84,5 +84,9 @@ export const InputForms = styled.input`
 `
 
 export const Nome=styled.h3`
-  color:blue;
+  color: #ffffff;
+  color: white;
+  font-size: 14px;
+  margin-left: 145px;
+  margin-top: -6px;
 `
