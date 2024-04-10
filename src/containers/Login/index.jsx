@@ -78,7 +78,7 @@ export function Login() {
       <SecondContainer>
 
         <img src={Logo} alt="image-logo" />
-        <Nome></Nome>
+        <Nome>Desenvolvido por César Rebouças</Nome>
         <h1>Login</h1>
         <form noValidate onSubmit={handleSubmit(onSubmit)}>
           <Label>Email</Label>
