@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import breakpoints from '../../styles/breakpoints'
 
 export const Button = styled.button`
   background: #9758a6;
@@ -19,5 +20,9 @@ export const Button = styled.button`
 
   &:active {
     opacity: 0.6;
+  }
+
+  @media ${breakpoints.md}{
+    width: 165.81px;
   }
 `

@@ -18,6 +18,10 @@ export const Container = styled.div`
   @media ${breakpoints.bg}{
     height: 78%;
   }
+
+  @media ${breakpoints.md}{
+    height: 68%;
+  }
  `
 
 
@@ -39,6 +43,10 @@ export const SecondContainer = styled.div`
     @media ${breakpoints.bg}{
     width: 241px;
   }
+
+  @media ${breakpoints.md}{
+    width: 228px;
+  }
   }
 
   h1 {
@@ -56,6 +64,12 @@ export const SecondContainer = styled.div`
     margin-top:69px;
     margin-left: 193px;
   }
+
+  @media ${breakpoints.md}{
+    width: 65px;
+    margin-top:45px;
+    margin-left:166px;
+  }
   }
 
   form {
@@ -67,6 +81,10 @@ export const SecondContainer = styled.div`
 
   @media ${breakpoints.bg}{
     height: 78%;
+  }
+
+  @media ${breakpoints.md}{
+    height: 68%;
   }
 `
 
@@ -82,6 +100,11 @@ export const SignLink = styled.p`
     text-decoration: underline;
     cursor:pointer;
   }
+
+  @media ${breakpoints.md}{
+    margin-top: 6px;
+  }
+  
 `
 
 export const Label = styled.p`
@@ -116,5 +139,9 @@ export const Nome=styled.h3`
 
   @media ${breakpoints.md}{
     margin-left: 139px;
+  }
+
+  @media ${breakpoints.md}{
+    margin-left: 110px;
   }
 `
