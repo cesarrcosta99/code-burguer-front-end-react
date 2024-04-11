@@ -22,6 +22,10 @@ export const Image = styled.img`
   @media screen and (${breakpoints.md}) {
     height: 68%;
   }
+
+  @media screen and (${breakpoints.sm}){
+    height:0;
+  }
 `
 
 export const SecondContainer = styled.div`
@@ -80,6 +84,10 @@ export const SecondContainer = styled.div`
 
   @media screen and (${breakpoints.md}) {
     height: 68%;
+  }
+
+  @media screen and (${breakpoints.sm}){
+    height:0;
   }
 `
 
