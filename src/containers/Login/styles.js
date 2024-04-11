@@ -87,7 +87,7 @@ export const SecondContainer = styled.div`
   }
 
   @media screen and (${breakpoints.sm}){
-    height:0;
+    height:100%;
   }
 `
 
