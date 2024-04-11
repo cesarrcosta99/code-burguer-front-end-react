@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Background from '../../assets/Background.png'
-import breakpoints from './../../styles/breakpoints';
+import breakpoints from './../../styles/breakpoints'
 
 export const Container = styled.div`
   background: url('${Background}');
@@ -12,20 +12,17 @@ export const Container = styled.div`
   align-items: center;
 `
 
- export const Image=styled.img`
+export const Image = styled.img`
   height: 90%;
 
-  @media ${breakpoints.bg}{
+  @media screen and (${breakpoints.bg}) {
     height: 78%;
   }
 
-  @media ${breakpoints.md}{
+  @media screen and (${breakpoints.md}) {
     height: 68%;
   }
- `
-
-
-
+`
 
 export const SecondContainer = styled.div`
   background: #373737;
@@ -40,13 +37,13 @@ export const SecondContainer = styled.div`
     margin-top: 36px;
     width: 262px;
 
-    @media ${breakpoints.bg}{
-    width: 241px;
-  }
+    @media screen and (${breakpoints.bg}) {
+      width: 241px;
+    }
 
-  @media ${breakpoints.md}{
-    width: 228px;
-  }
+    @media screen and (${breakpoints.md}) {
+      width: 228px;
+    }
   }
 
   h1 {
@@ -59,15 +56,15 @@ export const SecondContainer = styled.div`
     margin-top: 96px;
     margin-bottom: 30px;
 
-    @media ${breakpoints.bg}{
-    margin-top:53px;
-  }
+    @media screen and (${breakpoints.bg}) {
+      margin-top: 53px;
+    }
 
-  @media ${breakpoints.md}{
-    width: 65px;
-    margin-top:45px;
-    margin-left:166px;
-  }
+    @media screen and (${breakpoints.md}) {
+      width: 65px;
+      margin-top: 45px;
+      margin-left: 166px;
+    }
   }
 
   form {
@@ -77,11 +74,11 @@ export const SecondContainer = styled.div`
     padding-left: 70px;
   }
 
-  @media ${breakpoints.bg}{
+  @media screen and (${breakpoints.bg}) {
     height: 78%;
   }
 
-  @media ${breakpoints.md}{
+  @media screen and (${breakpoints.md}) {
     height: 68%;
   }
 `
@@ -96,13 +93,12 @@ export const SignLink = styled.p`
 
   a {
     text-decoration: underline;
-    cursor:pointer;
+    cursor: pointer;
   }
 
-  @media ${breakpoints.md}{
+  @media screen and (${breakpoints.md}) {
     margin-top: 6px;
   }
-  
 `
 
 export const Label = styled.p`
@@ -120,26 +116,26 @@ export const InputForms = styled.input`
   width: 85%;
   border: ${props => (props.error ? '2px solid #CC1717' : 'none')};
   margin-top: 2px;
-  margin-bottom:${props=>props.error ? "5px" : "25px"};
+  margin-bottom: ${props => (props.error ? '5px' : '25px')};
 `
 
-export const Nome=styled.h3`
+export const Nome = styled.h3`
   color: #ffffff;
   color: white;
   font-size: 14px;
   margin-left: 145px;
   margin-top: -6px;
 
-  @media ${breakpoints.bg}{
+  @media screen and (${breakpoints.bg}) {
     margin-left: 156px;
-    font-size:13px;
+    font-size: 13px;
   }
 
-  @media ${breakpoints.md}{
+  @media screen and (${breakpoints.md}) {
     margin-left: 139px;
   }
 
-  @media ${breakpoints.md}{
+  @media screen and (${breakpoints.md}) {
     margin-left: 110px;
   }
 `
