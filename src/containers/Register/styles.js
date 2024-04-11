@@ -73,6 +73,10 @@ export const InputForms = styled.input`
   width: 85%;
   margin-top: 2px;
   margin-bottom:${props=>props.error ? "2px" : "16px"};
+
+  @media screen and (${breakpoints.sm}) {
+    width:69%;
+  }
 `
 
 export const SignLink = styled.p`
