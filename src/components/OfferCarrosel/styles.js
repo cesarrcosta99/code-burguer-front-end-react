@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import breakpoints from '../../styles/breakpoints'
 
 export const Container = styled.div`
   background: #ffffff;
@@ -35,6 +36,10 @@ export const SecondContainer = styled.div`
 export const Image = styled.img`
   border: none;
   margin-bottom: 32px;
+
+  @media screen and (${breakpoints.sm}) {
+    width: 271px;
+  }
 `
 
 export const Item = styled.img`
