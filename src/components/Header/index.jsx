@@ -1,16 +1,17 @@
-import { Container, LinkPages, Divisao,NumeroCarrinho } from './styles'
+import { Container, LinkPages, Divisao, NumeroCarrinho } from './styles'
 import Carrinho from '../../assets/Carrinho.png'
 import Pessoa from '../../assets/Pessoa.png'
 import { useNavigate, useLocation } from 'react-router-dom'
-import {UseUser} from '../../hooks/UserContext'
+import { UseUser } from '../../hooks/UserContext'
 import { UseCart } from '../../hooks/CartContext'
 
 export function Header() {
   const navigate = useNavigate()
   const location = useLocation()
-  const {userData:{name}}=UseUser()
-  const {cartProducts}=UseCart()
-
+  const {
+    userData: { name }
+  } = UseUser()
+  const { cartProducts } = UseCart()
 
   const handleLogout = () => {
     localStorage.removeItem('codeBurguer:user')
@@ -37,10 +38,14 @@ export function Header() {
 
       <div className="segundo-container">
         <LinkPages onClick={() => navigate('/carrinho')}>
-          <img src={Carrinho} alt="icone-carrinho" />
-          {cartProducts.length > 0 && 
+          <img
+            src={Carrinho}
+            alt="icone-carrinho"
+            style={{ width: '1.690rem' }}
+          />
+          {cartProducts.length > 0 && (
             <NumeroCarrinho>{cartProducts.length}</NumeroCarrinho>
-          }
+          )}
         </LinkPages>
         <Divisao></Divisao>
         <LinkPages>
