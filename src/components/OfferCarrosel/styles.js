@@ -35,6 +35,7 @@ export const SecondContainer = styled.div`
 export const Image = styled.img`
   border: none;
   margin-bottom: 32px;
+  width: 250px;
 `
 
 export const Item = styled.img`

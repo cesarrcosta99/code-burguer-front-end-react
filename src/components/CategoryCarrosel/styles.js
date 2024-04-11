@@ -33,7 +33,7 @@ export const SecondContainer = styled.div`
 
 export const Image = styled.img`
   margin-bottom: 32px;
-  width: 400px;
+  width: 331px;
 `
 
 export const Item = styled.img`
