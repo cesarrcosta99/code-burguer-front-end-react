@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Background from '../../assets/Background.png'
+import breakpoints from '../../styles/breakpoints'
 
 export const Container = styled.div`
   background: url('${Background}');
@@ -13,6 +14,11 @@ export const Container = styled.div`
 
 export const Image = styled.img`
   height: 94%;
+
+  @media screen and (${breakpoints.sm}) {
+    height:0;
+  }
+
 `
 
 export const SecondContainer = styled.div`
@@ -44,6 +50,10 @@ export const SecondContainer = styled.div`
     gap: 2px;
     padding-left: 70px;
     margin-top: 13px;
+  }
+
+  @media screen and (${breakpoints.sm}) {
+    height:100%;
   }
 `
 
