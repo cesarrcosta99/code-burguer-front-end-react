@@ -22,6 +22,11 @@ export const Button = styled.button`
     opacity: 0.6;
   }
 
+  @media ${breakpoints.bg}{
+    margin-top: -1px;
+    margin-bottom: 8px;
+  }
+
   @media ${breakpoints.md}{
     width: 165.81px;
   }
