@@ -66,7 +66,7 @@ export const SecondContainer = styled.div`
 
     @media screen and (${breakpoints.md}) {
       width: 65px;
-      margin-top: 45px;
+      margin-top: 86px;
       margin-left: 166px;
     }
   }
@@ -137,10 +137,6 @@ export const Nome = styled.h3`
   @media screen and (${breakpoints.bg}) {
     margin-left: 156px;
     font-size: 13px;
-  }
-
-  @media screen and (${breakpoints.md}) {
-    margin-left: 139px;
   }
 
   @media screen and (${breakpoints.md}) {
