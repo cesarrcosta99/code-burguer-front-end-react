@@ -53,6 +53,8 @@ export const SecondContainer = styled.div`
 
     @media ${breakpoints.bg}{
     width: 66px;
+    margin-top:69px;
+    margin-left: 193px;
   }
   }
 
@@ -108,7 +110,7 @@ export const Nome=styled.h3`
   margin-top: -6px;
 
   @media ${breakpoints.bg}{
-    margin-left: 160px;
+    margin-left: 141px;
     font-size:13px;
   }
 
