@@ -14,6 +14,10 @@ export const Container = styled.div`
 
  export const Image=styled.img`
   height: 90%;
+
+  @media ${breakpoints.bg}{
+    height: 78%;
+  }
  `
 
 
@@ -31,6 +35,10 @@ export const SecondContainer = styled.div`
     margin: 0 auto;
     margin-top: 36px;
     width: 262px;
+
+    @media ${breakpoints.bg}{
+    width: 241px;
+  }
   }
 
   h1 {
@@ -42,6 +50,10 @@ export const SecondContainer = styled.div`
     text-align: center;
     margin-top: 96px;
     margin-bottom: 30px;
+
+    @media ${breakpoints.bg}{
+    width: 66px;
+  }
   }
 
   form {
@@ -49,6 +61,10 @@ export const SecondContainer = styled.div`
     flex-direction: column;
     gap: 2px;
     padding-left: 70px;
+  }
+
+  @media ${breakpoints.bg}{
+    height: 78%;
   }
 `
 
@@ -92,10 +108,11 @@ export const Nome=styled.h3`
   margin-top: -6px;
 
   @media ${breakpoints.bg}{
-    margin-left: 75px;
+    margin-left: 160px;
+    font-size:13px;
   }
 
   @media ${breakpoints.md}{
-    margin-left: 37px;
+    margin-left: 139px;
   }
 `
