@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import breakpoints from '../../styles/breakpoints'
 
 export const Container = styled.div`
   display: flex;
@@ -19,6 +20,10 @@ export const Container = styled.div`
 export const Img = styled.img`
   width: 185px;
   border-radius: 16px;
+
+  @media screen and (${breakpoints.sm}) {
+    width: 16px;
+  }
 `
 
 export const NomeProduto = styled.p`
