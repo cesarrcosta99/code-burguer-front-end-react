@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import breakpoints from "../../styles/breakpoints"
 
 
 export const Container=styled.div`
@@ -16,6 +17,13 @@ export const WrapContainer=styled.div`
     margin-left:50px;
     margin-top:100px;
     gap:34px;
+
+    @media screen and (${breakpoints.sm}){
+        flex-direction:column;
+        margin-left:0;
+        margin-top:23px;
+        gap:1px;
+    }
 `
 
 
