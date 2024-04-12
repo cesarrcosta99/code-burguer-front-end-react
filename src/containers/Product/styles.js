@@ -15,6 +15,11 @@ export const SelectCategory = styled.div`
   justify-content: center;
   gap: 40px;
   margin-top: 10px;
+
+  @media screen and (${breakpoints.sm}) {
+    justify-content:none;
+    gap:6px;
+  }
 `
 
 export const ButtonCategory = styled.button`
@@ -27,6 +32,10 @@ export const ButtonCategory = styled.button`
   line-height: 20px;
   color: ${props => (props.activoClick ? '#9758A6' : '#9A9A9D')};
   padding-bottom: 5px;
+
+  @media screen and (${breakpoints.sm}) {
+    font-size: 16px;
+  }
 `
 
 export const ShowProduct = styled.div`    

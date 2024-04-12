@@ -22,7 +22,7 @@ export const Img = styled.img`
   border-radius: 16px;
 
   @media screen and (${breakpoints.sm}) {
-    width: 16px;
+    width: 113px;
   }
 `
 
